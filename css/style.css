@@ -87,7 +87,6 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 6rem;
 }
@@ -118,13 +117,16 @@ body {
 }
 
 .header__about-me-text {
-  color: #fff;
   font-size: 1.2rem;
   width: 80%;
 }
 
 .u-center-text {
   text-align: center !important;
+}
+
+.u-white-text {
+  color: #fff;
 }
 
 .u-margin-bottom-big {
@@ -193,7 +195,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 .header__about-me {
   display: flex;
@@ -227,8 +228,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 20%);
-  color: #fff;
-  text-align: center;
   text-transform: uppercase;
   font-size: 1.7rem;
   opacity: 0;
