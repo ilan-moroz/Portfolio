@@ -12,9 +12,9 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
   height: 95vh;
 
-  //   @include respond(phone) {
-  //     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  //   }
+  @include respond(tab-land) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
+  }
 
   &__logo-box {
     position: absolute;
