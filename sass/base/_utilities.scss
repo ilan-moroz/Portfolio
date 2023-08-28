@@ -20,6 +20,13 @@
   margin-bottom: 1.5rem !important;
 }
 
+.u-margin-top-small {
+  margin-top: 4rem !important;
+
+  @include respond(big-desktop-max) {
+    margin-top: 2rem !important;
+  }
+}
 .u-margin-top-big {
   margin-top: 8rem !important;
 }

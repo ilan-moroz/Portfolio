@@ -25,11 +25,6 @@ html {
     font-size: 50%;
   }
 }
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
-}
 
 body {
   box-sizing: border-box;
@@ -112,7 +107,7 @@ body {
 .header__about-me-text {
   color: #fff;
   font-size: 1.2rem;
-  width: 30%;
+  width: 80%;
 }
 
 .u-center-text {
@@ -139,6 +134,15 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 4rem !important;
+}
+@media only screen and (max-width: 112.5em) {
+  .u-margin-top-small {
+    margin-top: 2rem !important;
+  }
 }
 
 .u-margin-top-big {
@@ -175,8 +179,14 @@ body {
 }
 .header__about-me {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 112.5em) {
+  .header__about-me {
+    margin-top: -5rem;
+  }
 }
 .header__img-shape {
   position: relative;
@@ -184,7 +194,6 @@ body {
   width: 20rem;
   clip-path: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
-  margin: 4rem;
 }
 .header__my-img {
   display: block;
