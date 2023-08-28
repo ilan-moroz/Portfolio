@@ -48,10 +48,10 @@ body ::selection {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-100rem);
   }
   80% {
-    transform: translateX(1rem);
+    transform: translateX(10rem);
   }
   100% {
     opacity: 1;
@@ -61,10 +61,10 @@ body ::selection {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(100rem);
   }
   80% {
-    transform: translateX(-1rem);
+    transform: translateX(-10rem);
   }
   100% {
     opacity: 1;
@@ -88,9 +88,7 @@ body {
   font-size: 7rem;
   font-weight: 500;
   letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation: moveInLeft 1s ease-out;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--main {
