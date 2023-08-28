@@ -103,6 +103,11 @@ body {
     font-size: 5rem;
   }
 }
+@media only screen and (max-width: 112.5em) {
+  .heading-primary--main {
+    line-height: 1.4;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;

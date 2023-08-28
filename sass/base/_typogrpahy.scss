@@ -20,6 +20,10 @@ body {
       letter-spacing: 1rem;
       font-size: 5rem;
     }
+
+    @include respond(big-desktop-max) {
+      line-height: 1.4;
+    }
   }
 
   &--sub {
