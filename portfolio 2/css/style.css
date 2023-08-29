@@ -217,6 +217,7 @@
   border-bottom: 0.2rem solid transparent;
   border-left: 0.2rem solid #00abf0;
   border-right: 0.2rem solid #00abf0;
+  animation: aboutSpinner 5s linear infinite;
 }
 .about__content {
   display: flex;
@@ -303,6 +304,11 @@ body {
   }
   75%, 81% {
     opacity: 0;
+  }
+}
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 

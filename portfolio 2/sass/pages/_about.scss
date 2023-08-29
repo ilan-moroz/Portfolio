@@ -63,6 +63,7 @@
       border-bottom: 0.2rem solid transparent;
       border-left: 0.2rem solid $main-color;
       border-right: 0.2rem solid $main-color;
+      animation: aboutSpinner 5s linear infinite;
     }
   }
 
