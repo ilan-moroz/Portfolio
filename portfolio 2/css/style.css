@@ -80,6 +80,9 @@
   display: flex;
   align-items: center;
   padding: 0 9%;
+  background: url("../images/home.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .home__content {
   max-width: 70rem;
@@ -124,6 +127,19 @@
 .home__links--logo:hover {
   color: #081b29;
   background-color: #00abf0;
+}
+.home__imgHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: #081b29;
+  opacity: 0;
+  transition: 3s;
+}
+.home__imgHover:hover {
+  opacity: 0.8;
 }
 
 * {
