@@ -15,6 +15,18 @@
   &__text-animate {
     position: relative;
     width: 38rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      border-right: 2px solid $main-color;
+      animation: homeCursorText 6s linear infinite;
+      animation-delay: 1s;
+    }
   }
 
   &__text {

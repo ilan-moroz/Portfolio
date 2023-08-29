@@ -16,6 +16,13 @@ body {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1.5px $main-color;
+    background-image: linear-gradient($main-color, $main-color);
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: -38rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 1s;
   }
 }
 
