@@ -17,6 +17,10 @@
     font-size: 3rem;
     color: $text-color;
     font-weight: 600;
+
+    & span {
+      color: $main-color;
+    }
   }
 
   &__menu-icon,
