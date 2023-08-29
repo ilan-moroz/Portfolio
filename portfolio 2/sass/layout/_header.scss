@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__logo {
+    font-size: 3rem;
+    color: $text-color;
+    font-weight: 600;
+  }
+
+  &__menu-icon,
+  #menu-icon {
+    font-size: 3.7rem;
+    color: $text-color;
+    cursor: pointer;
+    display: none;
+  }
+}

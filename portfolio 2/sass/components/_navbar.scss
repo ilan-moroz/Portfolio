@@ -1,0 +1,14 @@
+.navbar {
+  a {
+    font-size: 2rem;
+    color: $text-color;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: all 0.3s;
+
+    &:hover,
+    &.active {
+      color: $main-color;
+    }
+  }
+}
