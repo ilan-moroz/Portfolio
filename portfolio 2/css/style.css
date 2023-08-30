@@ -97,6 +97,7 @@
 }
 .home__content {
   max-width: 74rem;
+  z-index: 99;
 }
 .home__text-animate {
   position: relative;
