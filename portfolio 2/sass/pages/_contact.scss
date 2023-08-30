@@ -7,7 +7,26 @@
   flex-direction: column;
 
   &__form {
-    max-width: 90rem;
+    width: 90rem;
+
+    .focus {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: $color-bg-light;
+      border-radius: 0.6rem;
+      z-index: -1;
+      transition: 0.5s;
+    }
+
+    input:focus ~ .focus,
+    input:valid ~ .focus,
+    textarea:focus ~ .focus,
+    textarea:valid ~ .focus {
+      width: 100%;
+    }
   }
 
   &__input-box {
@@ -19,11 +38,17 @@
 
   &__input-field {
     position: relative;
-    width: 45rem;
+    width: 49%;
     margin: 0.8rem 0;
+  }
 
-    &:not(:last-child) {
-      padding-right: 1rem;
+  &__textarea-field {
+    position: relative;
+    margin-top: 0.7rem;
+    height: 70%;
+
+    & textarea {
+      resize: none;
     }
   }
 
@@ -37,6 +62,15 @@
     background: transparent;
     border-radius: 0.6rem;
     border: 0.2rem solid $main-color;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder,
+    &::placeholder {
+      color: $text-color;
+    }
   }
 
   &__btn {

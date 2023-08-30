@@ -28,6 +28,7 @@
   z-index: 1;
   overflow: hidden;
   transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 .btn::before {
   content: "";
@@ -368,7 +369,24 @@
   flex-direction: column;
 }
 .contact__form {
-  max-width: 90rem;
+  width: 90rem;
+}
+.contact__form .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #112e42;
+  border-radius: 0.6rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+.contact__form input:focus ~ .focus,
+.contact__form input:valid ~ .focus,
+.contact__form textarea:focus ~ .focus,
+.contact__form textarea:valid ~ .focus {
+  width: 100%;
 }
 .contact__input-box {
   position: relative;
@@ -378,11 +396,16 @@
 }
 .contact__input-field {
   position: relative;
-  width: 45rem;
+  width: 49%;
   margin: 0.8rem 0;
 }
-.contact__input-field:not(:last-child) {
-  padding-right: 1rem;
+.contact__textarea-field {
+  position: relative;
+  margin-top: 0.7rem;
+  height: 70%;
+}
+.contact__textarea-field textarea {
+  resize: none;
 }
 .contact__input-field input, .contact__textarea-field textarea {
   width: 100%;
@@ -393,6 +416,12 @@
   background: transparent;
   border-radius: 0.6rem;
   border: 0.2rem solid #00abf0;
+}
+.contact__input-field input:focus, .contact__textarea-field textarea:focus {
+  outline: none;
+}
+.contact__input-field input::placeholder, .contact__input-field input::placeholder, .contact__textarea-field textarea::placeholder, .contact__textarea-field textarea::placeholder {
+  color: #ededed;
 }
 .contact__btn {
   margin: 1rem auto;
