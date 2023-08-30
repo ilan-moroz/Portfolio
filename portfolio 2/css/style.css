@@ -166,6 +166,7 @@
   background: #112e42;
   padding-bottom: 6rem;
   height: 100vh;
+  overflow: scroll;
 }
 .about__img {
   position: relative;
@@ -177,6 +178,18 @@
   height: 25rem;
   width: 25rem;
   clip-path: circle(50% at 50% 50%);
+}
+@media only screen and (max-width: 112.5em) {
+  .about__img--shape {
+    height: 18rem;
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 74em) {
+  .about__img--shape {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 .about__img--me {
   display: block;
@@ -232,6 +245,11 @@
   width: 65%;
   font-size: 1.7rem;
   margin: 2rem 0 3rem;
+}
+@media only screen and (max-width: 112.5em) {
+  .about__content p {
+    font-size: 1.55rem;
+  }
 }
 .about__btn {
   width: 15rem;
