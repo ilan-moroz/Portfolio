@@ -1,0 +1,40 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+  height: 100vh;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    gap: 5rem;
+  }
+
+  &__single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+
+    & h3 {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__logo {
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.2));
+
+    &:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0px 6px 8px rgba(255, 255, 255, 0.3));
+    }
+  }
+}
