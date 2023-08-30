@@ -1,0 +1,56 @@
+.projects {
+  height: 100vh;
+  background: $color-bg-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  &__column {
+    flex: 1;
+    padding: 5rem;
+  }
+
+  &__box {
+    border-left: 0.2rem solid $main-color;
+  }
+
+  &__content {
+    position: relative;
+    padding-left: 2rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      background: $main-color;
+      border-radius: 50%;
+    }
+
+    &--text {
+      position: relative;
+      padding: 1.5rem;
+      border: 0.2rem solid $main-color;
+      border-radius: 0.6rem;
+      margin-bottom: 2rem;
+
+      & h3 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1.6rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}
