@@ -8,6 +8,11 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: 0.3s;
+
+  &.sticky {
+    background: $color-bg;
+  }
 
   a {
     text-decoration: none;
