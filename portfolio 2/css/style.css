@@ -24,7 +24,7 @@
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  color: rgb(10, 11, 10);
+  color: #0a0b0a;
   z-index: 1;
   overflow: hidden;
   transition: all 0.5s ease-in;
@@ -37,7 +37,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: rgb(10, 11, 10);
+  background: #0a0b0a;
   z-index: -1;
   transition: all 0.5s;
 }
@@ -69,7 +69,7 @@
   transition: 0.3s;
 }
 .header.sticky {
-  background: rgb(10, 11, 10);
+  background: #0a0b0a;
 }
 .header a {
   text-decoration: none;
@@ -97,7 +97,7 @@
   align-items: center;
   padding: 2rem 9%;
   flex-wrap: wrap;
-  background: rgb(20, 21, 20);
+  background: #1e1f1e;
 }
 .footer__text {
   font-size: 1.6rem;
@@ -116,7 +116,7 @@
 }
 .footer__icon-top a {
   font-size: 2.4rem;
-  color: rgb(10, 11, 10);
+  color: #0a0b0a;
 }
 .footer__icon-top a:hover {
   color: #ff7518;
@@ -128,7 +128,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: rgb(10, 11, 10);
+  background: #0a0b0a;
   z-index: -1;
   transition: 0.3s;
 }
@@ -192,7 +192,7 @@
   transition: all 0.5s;
 }
 .home__links--logo:hover {
-  color: rgb(10, 11, 10);
+  color: #0a0b0a;
   background-color: #ff7518;
 }
 .home__imgHover {
@@ -201,7 +201,7 @@
   right: 0;
   width: 70%;
   height: 100%;
-  background: rgb(10, 11, 10);
+  background: #0a0b0a;
   opacity: 0;
   transition: 3s;
 }
@@ -220,7 +220,7 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background: rgb(20, 21, 20);
+  background: #1e1f1e;
   padding-bottom: 6rem;
   height: 100vh;
 }
@@ -311,7 +311,7 @@
   width: 15rem;
 }
 .about__btn a::before {
-  background: rgb(20, 21, 20) !important;
+  background: #1e1f1e !important;
 }
 
 .skills {
@@ -352,7 +352,7 @@
 
 .projects {
   height: 100vh;
-  background: rgb(20, 21, 20);
+  background: #1e1f1e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,7 +400,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: rgb(10, 11, 10);
+  background: #0a0b0a;
   z-index: -1;
   transition: 0.3s;
 }
@@ -432,7 +432,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: rgb(20, 21, 20);
+  background: #1e1f1e;
   border-radius: 0.6rem;
   z-index: -1;
   transition: 0.5s;
@@ -497,7 +497,7 @@ html {
 
 body {
   font-family: "Roboto Mono", monospace;
-  background-color: rgb(10, 11, 10);
+  background-color: #0a0b0a;
   color: #e0e0e0;
 }
 
