@@ -1,6 +1,14 @@
 "use strict";
 
 // toggle icon navbar
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
+
+// toggle menu icon class to show different icon
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("navbar__active");
+};
 
 // scroll sections
 // Query all section elements on the page
@@ -35,4 +43,8 @@ window.onscroll = () => {
   // Add or remove 'sticky' class to header based on the scroll position
   const header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 150);
+
+  // remove toggle icon and navbar when clicking on navbar links
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("navbar__active");
 };

@@ -2,11 +2,34 @@
   @include respond(small-tab) {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -100%;
     width: 100%;
     padding: 1rem 4%;
-    background: $color-bg;
+    background: $main-color;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease 0.25s;
+    z-index: 1;
+  }
+
+  &__active {
+    left: 0;
+    transition-delay: 0s;
+  }
+
+  &__active-span {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: $color-bg;
+    z-index: -1;
+    transition: 0.25s ease 0s;
+
+    .navbar__active & {
+      left: 0;
+      transition-delay: 0.25s;
+    }
   }
 
   a {
