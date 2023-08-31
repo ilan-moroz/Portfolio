@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url("../images/home.jpg") no-repeat;
+  background: url("../images/ASTRONAUT.png") no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 45rem center;
 
   &__content {
     max-width: 74rem;
@@ -68,11 +68,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
+    width: 70%;
     height: 100%;
     background: $color-bg;
     opacity: 0;
     transition: 3s;
+
+    @include respond(big-desktop) {
+      width: 60%;
+    }
 
     &:hover {
       opacity: 0.8;
