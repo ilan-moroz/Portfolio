@@ -221,7 +221,7 @@
   flex-direction: column;
   gap: 2rem;
   background: #1e1f1e;
-  padding-bottom: 6rem;
+  padding-top: 6rem;
   height: 100vh;
 }
 .about__img {
