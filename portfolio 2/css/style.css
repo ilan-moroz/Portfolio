@@ -68,6 +68,17 @@
   z-index: 100;
   transition: 0.3s;
 }
+@media only screen and (max-width: 100em) {
+  .header {
+    padding: 2rem 4%;
+    background: #0a0b0a;
+  }
+}
+@media only screen and (max-width: 74em) {
+  .header {
+    padding: 2rem 2%;
+  }
+}
 .header.sticky {
   background: #0a0b0a;
 }

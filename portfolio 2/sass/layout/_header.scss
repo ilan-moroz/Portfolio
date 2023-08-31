@@ -10,6 +10,15 @@
   z-index: 100;
   transition: 0.3s;
 
+  @include respond(small-desktop) {
+    padding: 2rem 4%;
+    background: $color-bg;
+  }
+
+  @include respond(tab-land) {
+    padding: 2rem 2%;
+  }
+
   &.sticky {
     background: $color-bg;
   }
