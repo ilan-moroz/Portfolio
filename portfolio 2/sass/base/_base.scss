@@ -10,4 +10,8 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+
+  @include respond(tab-land) {
+    font-size: 55%;
+  }
 }
