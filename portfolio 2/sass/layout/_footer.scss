@@ -1,11 +1,15 @@
 .footer {
-  height: 6vh;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 9%;
   flex-wrap: wrap;
   background: $color-bg-light;
+
+  // @include respond(big-desktop) {
+  //   height: 8vh;
+  // }
 
   &__text {
     font-size: 1.6rem;
@@ -16,7 +20,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0.7rem;
+    padding: 0.2rem;
     background: $main-color;
     border: 0.2rem solid $main-color;
     border-radius: 0.6rem;

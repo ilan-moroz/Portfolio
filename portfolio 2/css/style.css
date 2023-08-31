@@ -91,7 +91,7 @@
 }
 
 .footer {
-  height: 6vh;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +107,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem;
+  padding: 0.2rem;
   background: #ff7518;
   border: 0.2rem solid #ff7518;
   border-radius: 0.6rem;
@@ -416,7 +416,7 @@
 }
 
 .contact {
-  height: 94vh;
+  height: 92vh;
   min-height: auto;
   display: flex;
   justify-content: center;
