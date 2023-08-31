@@ -1,10 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@media only screen and (max-width: 46.87em) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background: #0a0b0a;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+}
 .navbar a {
   font-size: 2rem;
   color: #e0e0e0;
   font-weight: 500;
   margin-left: 3.5rem;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 46.87em) {
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
 }
 .navbar a:hover, .navbar a.active {
   color: #ff7518;
@@ -99,6 +117,12 @@
   color: #e0e0e0;
   cursor: pointer;
   display: none;
+}
+@media only screen and (max-width: 46.87em) {
+  .header__menu-icon,
+  .header #menu-icon {
+    display: block;
+  }
 }
 
 .footer {

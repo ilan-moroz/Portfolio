@@ -43,5 +43,9 @@
     color: $text-color;
     cursor: pointer;
     display: none;
+
+    @include respond(small-tab) {
+      display: block;
+    }
   }
 }
