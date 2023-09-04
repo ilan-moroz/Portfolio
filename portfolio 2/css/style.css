@@ -491,7 +491,11 @@
   padding: 5rem;
 }
 .projects__box {
+  position: relative;
   border-left: 0.2rem solid #ff7518;
+}
+.projects__box .animate.scroll {
+  width: 105%;
 }
 .projects__content {
   position: relative;

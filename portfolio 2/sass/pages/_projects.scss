@@ -19,7 +19,12 @@
   }
 
   &__box {
+    position: relative;
     border-left: 0.2rem solid $main-color;
+
+    .animate.scroll {
+      width: 105%;
+    }
   }
 
   &__content {
