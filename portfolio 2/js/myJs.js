@@ -42,7 +42,7 @@ window.onscroll = () => {
 
   // Add or remove 'sticky' class to header based on the scroll position
   const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 150);
+  header.classList.toggle("sticky", window.scrollY > 100);
 
   // remove toggle icon and navbar when clicking on navbar links
   menuIcon.classList.remove("bx-x");
