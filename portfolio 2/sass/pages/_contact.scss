@@ -7,7 +7,8 @@
   flex-direction: column;
 
   &__form {
-    width: 90rem;
+    max-width: 90rem;
+    width: 100%;
 
     .focus {
       position: absolute;

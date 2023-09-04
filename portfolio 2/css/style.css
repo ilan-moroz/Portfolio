@@ -484,7 +484,8 @@
   flex-direction: column;
 }
 .contact__form {
-  width: 90rem;
+  max-width: 90rem;
+  width: 100%;
 }
 .contact__form .focus {
   position: absolute;
