@@ -11,6 +11,13 @@
   &__content {
     max-width: 74rem;
     z-index: 99;
+
+    @include respond(phone) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__text-animate {
