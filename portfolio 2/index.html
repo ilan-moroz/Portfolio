@@ -302,32 +302,56 @@
     <!-- contact section -->
     <section class="contact" id="contact">
       <h2 class="heading"><span>Contact</span> Me!</h2>
-      <form action="#" class="contact__form">
+      <form
+        action="https://formspree.io/f/mbjvykez"
+        method="POST"
+        class="contact__form"
+      >
         <div class="contact__input-box">
           <div class="contact__input-field">
-            <input type="text" placeholder="Full Name" required />
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Full Name"
+              required
+            />
             <span class="focus"></span>
           </div>
           <div class="contact__input-field">
-            <input type="text" placeholder="Email Address" required />
+            <input
+              type="email"
+              name="emailAddress"
+              placeholder="Email Address"
+              required
+            />
             <span class="focus"></span>
           </div>
           <span class="animate scroll" style="--i: 2"></span>
         </div>
         <div class="contact__input-box">
           <div class="contact__input-field">
-            <input type="number" placeholder="Mobile Number" required />
+            <input
+              type="number"
+              name="mobileNumber"
+              placeholder="Mobile Number"
+              required
+            />
             <span class="focus"></span>
           </div>
           <div class="contact__input-field">
-            <input type="text" placeholder="Email Subject" required />
+            <input
+              type="text"
+              name="emailSubject"
+              placeholder="Email Subject"
+              required
+            />
             <span class="focus"></span>
           </div>
           <span class="animate scroll" style="--i: 4"></span>
         </div>
         <div class="contact__textarea-field">
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
