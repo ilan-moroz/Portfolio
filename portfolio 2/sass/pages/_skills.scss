@@ -6,6 +6,11 @@
   gap: 8rem;
   height: auto;
   min-height: 100vh;
+  margin-bottom: 3rem;
+
+  @include respond(big-tab) {
+    gap: 2rem;
+  }
 
   &__box {
     display: flex;
@@ -13,6 +18,11 @@
     justify-content: center;
     width: 60%;
     gap: 5rem;
+
+    @include respond(big-tab) {
+      width: 95%;
+      gap: 2rem;
+    }
   }
 
   &__single {
@@ -24,6 +34,10 @@
 
     & h3 {
       font-size: 1.6rem;
+
+      @include respond(small-tab) {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -32,6 +46,11 @@
     height: 10rem;
     transition: all 0.3s ease-in-out;
     filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.2));
+
+    @include respond(small-tab) {
+      width: 8rem;
+      height: 8rem;
+    }
 
     &:hover {
       transform: scale(1.1);
