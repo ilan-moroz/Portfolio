@@ -37,6 +37,10 @@ window.onscroll = () => {
           .querySelector("header nav a[href*= " + id + "]")
           .classList.add("active");
       });
+      // active section for animation
+      sec.classList.add("show-animate");
+    } else {
+      sec.classList.remove("show-animate");
     }
   });
 
