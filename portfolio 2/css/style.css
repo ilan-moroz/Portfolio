@@ -168,6 +168,12 @@
 .footer__text {
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .footer__text {
+    padding-top: 1rem;
+    font-size: 1.2em;
+  }
+}
 .footer__icon-top {
   position: relative;
   display: inline-flex;
