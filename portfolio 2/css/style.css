@@ -751,12 +751,16 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: yellow;
+  background: #0a0b0a;
   z-index: 95;
 }
 
+section:nth-child(odd) .animate {
+  background: #1e1f1e;
+}
+
 .animate.home-img {
-  width: 55%;
+  width: 62%;
 }
 
 .header .animate,
