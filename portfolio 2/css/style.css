@@ -151,13 +151,19 @@
 }
 
 .footer {
-  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 9%;
   flex-wrap: wrap;
   background: #1e1f1e;
+  height: auto;
+  min-height: 8vh;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    flex-direction: column-reverse;
+  }
 }
 .footer__text {
   font-size: 1.6rem;
@@ -282,7 +288,8 @@
   gap: 2rem;
   background: #1e1f1e;
   padding-top: 6rem;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 }
 .about__img {
   position: relative;
@@ -380,7 +387,8 @@
   align-items: center;
   flex-direction: column;
   gap: 8rem;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 }
 .skills__box {
   display: flex;
@@ -411,13 +419,13 @@
 }
 
 .projects {
-  height: 100vh;
   background: #1e1f1e;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: auto;
+  height: auto;
+  min-height: 100vh;
 }
 .projects__row {
   display: flex;
@@ -476,13 +484,14 @@
 }
 
 .contact {
-  height: 92vh;
   min-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  height: auto;
+  min-height: 92vh;
 }
 .contact__form {
   max-width: 90rem;

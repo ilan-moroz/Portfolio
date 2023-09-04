@@ -4,7 +4,8 @@
   align-items: center;
   flex-direction: column;
   gap: 8rem;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 
   &__box {
     display: flex;

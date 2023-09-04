@@ -6,7 +6,8 @@
   gap: 2rem;
   background: $color-bg-light;
   padding-top: 6rem;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
 
   &__img {
     position: relative;

@@ -1,11 +1,11 @@
 .projects {
-  height: 100vh;
   background: $color-bg-light;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: auto;
+  height: auto;
+  min-height: 100vh;
 
   &__row {
     display: flex;

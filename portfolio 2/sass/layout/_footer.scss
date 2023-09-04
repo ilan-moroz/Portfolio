@@ -1,15 +1,16 @@
 .footer {
-  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 9%;
   flex-wrap: wrap;
   background: $color-bg-light;
+  height: auto;
+  min-height: 8vh;
 
-  // @include respond(big-desktop) {
-  //   height: 8vh;
-  // }
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
 
   &__text {
     font-size: 1.6rem;

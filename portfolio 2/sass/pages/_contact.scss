@@ -1,11 +1,12 @@
 .contact {
-  height: 92vh;
   min-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
+  height: auto;
+  min-height: 92vh;
 
   &__form {
     max-width: 90rem;
