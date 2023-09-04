@@ -12,6 +12,10 @@
 
   @include respond(small-desktop) {
     padding: 2rem 4%;
+  }
+
+  @include respond(big-tab) {
+    padding: 2rem 3%;
     background: $color-bg;
   }
 
