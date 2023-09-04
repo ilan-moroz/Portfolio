@@ -26,6 +26,7 @@
   }
 
   &__single {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +35,7 @@
 
     & h3 {
       font-size: 1.6rem;
+      position: relative;
 
       @include respond(small-tab) {
         font-size: 1.4rem;
