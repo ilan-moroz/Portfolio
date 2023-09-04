@@ -24,6 +24,10 @@
     position: relative;
     width: 38rem;
 
+    @include respond(XsPhone) {
+      width: 30rem;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -40,6 +44,10 @@
   &__text {
     font-size: 1.7rem;
     margin: 2rem 0 4rem;
+
+    @include respond(XsPhone) {
+      font-size: 1.4rem;
+    }
   }
 
   &__links {

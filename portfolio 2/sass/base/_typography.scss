@@ -18,6 +18,10 @@ body {
       font-size: 5.5rem;
     }
 
+    @include respond(XsPhone) {
+      font-size: 4rem;
+    }
+
     & span {
       color: $main-color;
     }
@@ -42,6 +46,10 @@ body {
 
     @include respond(phone) {
       font-size: 2.5rem;
+    }
+
+    @include respond(XsPhone) {
+      font-size: 2rem;
     }
   }
 }

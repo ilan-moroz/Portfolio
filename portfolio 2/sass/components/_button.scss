@@ -18,6 +18,10 @@
   transition: all 0.5s ease-in;
   cursor: pointer;
 
+  @include respond(XsPhone) {
+    width: 12.5rem;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -45,4 +49,8 @@
   justify-content: space-between;
   width: 35rem;
   height: 5.5rem;
+
+  @include respond(XsPhone) {
+    width: 30rem;
+  }
 }
