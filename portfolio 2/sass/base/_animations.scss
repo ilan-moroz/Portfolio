@@ -61,7 +61,8 @@
 .header .animate,
 .navbar .animate,
 #menu-icon .animate,
-.home.show-animate .animate {
+.home.show-animate .animate,
+.about.show-animate .animate {
   animation: showRight 1s ease forwards;
   animation-delay: calc(0.3s * var(--i));
 }
