@@ -52,3 +52,15 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("navbar__active");
 };
+
+// add animations for all skills
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".skills__single");
+
+  elements.forEach((element, index) => {
+    const span = document.createElement("span");
+    span.className = "animate scroll";
+    span.style = `--i: ${index / 2 + 1}`;
+    element.appendChild(span);
+  });
+});
