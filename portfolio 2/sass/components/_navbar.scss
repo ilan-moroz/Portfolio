@@ -1,4 +1,6 @@
 .navbar {
+  position: relative;
+
   @include respond(small-tab) {
     position: absolute;
     top: 100%;
@@ -17,7 +19,7 @@
   }
 
   &__active-span {
-    position: absolute;
+    position: relative;
     top: 0;
     left: -100%;
     width: 100%;
@@ -25,6 +27,10 @@
     background: $color-bg;
     z-index: -1;
     transition: 0.25s ease 0s;
+
+    @include respond(big-tab) {
+      position: absolute;
+    }
 
     .navbar__active & {
       left: 0;

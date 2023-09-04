@@ -35,6 +35,7 @@
     font-size: 3rem;
     color: $text-color;
     font-weight: 600;
+    position: relative;
 
     & span {
       color: $main-color;
@@ -43,6 +44,7 @@
 
   &__menu-icon,
   #menu-icon {
+    position: relative;
     font-size: 3.7rem;
     color: $text-color;
     cursor: pointer;

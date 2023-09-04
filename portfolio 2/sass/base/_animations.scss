@@ -36,3 +36,27 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+// animation reload and scroll
+.animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  z-index: 95;
+}
+
+.header .animate,
+.navbar .animate,
+#menu-icon .animate {
+  animation: showRight 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+}

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+.navbar {
+  position: relative;
+}
 @media only screen and (max-width: 46.87em) {
   .navbar {
     position: absolute;
@@ -17,7 +20,7 @@
   transition-delay: 0s;
 }
 .navbar__active-span {
-  position: absolute;
+  position: relative;
   top: 0;
   left: -100%;
   width: 100%;
@@ -25,6 +28,11 @@
   background: #0a0b0a;
   z-index: -1;
   transition: 0.25s ease 0s;
+}
+@media only screen and (max-width: 87.5em) {
+  .navbar__active-span {
+    position: absolute;
+  }
 }
 .navbar__active .navbar__active-span {
   left: 0;
@@ -142,12 +150,14 @@
   font-size: 3rem;
   color: #e0e0e0;
   font-weight: 600;
+  position: relative;
 }
 .header__logo span {
   color: #ff7518;
 }
 .header__menu-icon,
 .header #menu-icon {
+  position: relative;
   font-size: 3.7rem;
   color: #e0e0e0;
   cursor: pointer;
@@ -724,6 +734,27 @@ body {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+.animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  z-index: 95;
+}
+
+.header .animate,
+.navbar .animate,
+#menu-icon .animate {
+  animation: showRight 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
 }
 
 /*# sourceMappingURL=style.css.map */
