@@ -53,14 +53,23 @@ window.onscroll = () => {
   navbar.classList.remove("navbar__active");
 };
 
-// add animations for all skills
 document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".skills__single");
+  const skills = document.querySelectorAll(".skills__single");
+  const sections = document.querySelectorAll("section h2");
 
-  elements.forEach((element, index) => {
+  // add animations for all skills
+  skills.forEach((element, index) => {
     const span = document.createElement("span");
     span.className = "animate scroll";
     span.style = `--i: ${index / 2 + 1}`;
+    element.appendChild(span);
+  });
+
+  // add animations for all section headers
+  sections.forEach(element => {
+    const span = document.createElement("span");
+    span.className = "animate scroll";
+    span.style = `--i: 1`;
     element.appendChild(span);
   });
 });
