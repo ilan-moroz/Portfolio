@@ -10,6 +10,14 @@ body {
     font-weight: 700;
     line-height: 1.3;
 
+    @include respond(small-tab) {
+      font-size: 6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 5.5rem;
+    }
+
     & span {
       color: $main-color;
     }
@@ -27,6 +35,14 @@ body {
     background-position: -38rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 1s;
+
+    @include respond(small-tab) {
+      font-size: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 }
 
