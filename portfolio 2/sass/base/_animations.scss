@@ -54,9 +54,14 @@
   z-index: 95;
 }
 
+.animate.home-img {
+  width: 55%;
+}
+
 .header .animate,
 .navbar .animate,
-#menu-icon .animate {
+#menu-icon .animate,
+.home.show-animate .animate {
   animation: showRight 1s ease forwards;
   animation-delay: calc(0.3s * var(--i));
 }

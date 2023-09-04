@@ -44,6 +44,7 @@
   &__text {
     font-size: 1.7rem;
     margin: 2rem 0 4rem;
+    position: relative;
 
     @include respond(XsPhone) {
       font-size: 1.4rem;
