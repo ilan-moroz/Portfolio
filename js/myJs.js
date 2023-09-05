@@ -80,3 +80,8 @@ window.onbeforeunload = () => {
     form.reset();
   }
 };
+
+// splide image slider
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#image-slider").mount();
+});

@@ -112,6 +112,12 @@
   }
 }
 
+.splide__slide img {
+  width: 50%;
+  height: auto;
+  padding: 3rem 0;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -545,6 +551,7 @@
   padding: 1rem 0;
 }
 .projects__content--text .btn-box {
+  margin-top: 1rem;
   height: 3rem;
 }
 
