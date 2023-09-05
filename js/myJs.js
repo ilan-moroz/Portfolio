@@ -72,6 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
     span.style = `--i: 1`;
     element.appendChild(span);
   });
+
+  // splide image slider
+  new Splide("#image-slider").mount();
 });
 
 // reset the form
@@ -80,8 +83,3 @@ window.onbeforeunload = () => {
     form.reset();
   }
 };
-
-// splide image slider
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#image-slider").mount();
-});
