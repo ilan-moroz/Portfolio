@@ -116,6 +116,11 @@
   width: 50%;
   height: auto;
   padding: 3rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.splide__slide img:hover {
+  transform: scale(1.1);
 }
 
 .header {
