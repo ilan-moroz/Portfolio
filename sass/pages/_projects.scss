@@ -49,6 +49,10 @@
       border-radius: 0.6rem;
       margin-bottom: 2rem;
       z-index: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       &::before {
         content: "";
@@ -67,12 +71,16 @@
       }
 
       & h3 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       & p {
         font-size: 1.6rem;
-        padding-top: 0.5rem;
+        padding: 1rem 0;
+      }
+
+      & .btn-box {
+        height: 3rem;
       }
     }
   }
