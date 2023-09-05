@@ -73,3 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
     element.appendChild(span);
   });
 });
+
+// reset the form
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
