@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // splide image slider
   new Splide("#crypto-image-slider").mount();
   new Splide("#store-image-slider").mount();
+  new Splide("#natours-image-slider").mount();
 });
 
 // reset the form
