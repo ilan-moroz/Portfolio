@@ -491,7 +491,7 @@
   flex-direction: column;
   height: auto;
   min-height: 100vh;
-  scroll-margin-top: 10rem;
+  scroll-margin-top: 8rem;
 }
 .projects__row {
   display: flex;
