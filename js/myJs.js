@@ -74,7 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // splide image slider
-  new Splide("#image-slider").mount();
+  new Splide("#crypto-image-slider").mount();
+  new Splide("#store-image-slider").mount();
 });
 
 // reset the form
