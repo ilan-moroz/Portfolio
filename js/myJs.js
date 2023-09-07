@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
   new Splide("#natours-image-slider").mount();
   new Splide("#nexter-image-slider").mount();
   new Splide("#trillo-image-slider").mount();
+  new Splide("#factory-image-slider").mount();
 });
 
 // reset the form
