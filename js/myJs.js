@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   new Splide("#nexter-image-slider").mount();
   new Splide("#trillo-image-slider").mount();
   new Splide("#factory-image-slider").mount();
+  new Splide("#vacation-image-slider").mount();
 });
 
 // reset the form
