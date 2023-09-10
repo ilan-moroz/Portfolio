@@ -22,7 +22,7 @@ window.onscroll = () => {
     // Get the current scroll position from the top of the page
     const top = window.scrollY;
     // Get the offset top position of the current section and subtract 100
-    const offset = sec.offsetTop - 150;
+    const offset = sec.offsetTop - 350;
     // Get the height of the current section
     const height = sec.offsetHeight;
     const id = sec.getAttribute("id");
