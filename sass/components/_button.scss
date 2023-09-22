@@ -17,6 +17,7 @@
   overflow: hidden;
   transition: all 0.5s ease-in;
   cursor: pointer;
+  margin: 0.5rem;
 
   @include respond(XsPhone) {
     width: 12.5rem;
@@ -46,7 +47,7 @@
 .btn-box {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 35rem;
   height: 5.5rem;
 
